@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        background-color: rgb(163, 246, 218);
+    }
+    button{
+        width: 300px;
+        margin: 20px;
+        font-size: 20px;
+        color: rgb(252, 0, 0);
+        border: 2px solid gray;
+        background-color: rgb(175, 171, 171);
+    }
+</style>
+<body>
+    <h3>Бул кнопка ар бир басканды эсептейт</h3>
+    <button id="count" onclick="countClicks()">Бул жерди бас!</button>
+
+
+
+    <script>
+        let count=0;
+        function countClicks(){
+            count++;
+
+            document.getElementById('count').innerHTML=count;
+        }
+
+    </script>
+</body>
+</html>
